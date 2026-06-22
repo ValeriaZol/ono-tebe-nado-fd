@@ -134,8 +134,10 @@ body {
 
 .lots {
     background-color: #f9f9f9;
-    padding: 60px 20px; /* Внутренний отступ */
+    padding: 80px 20px; /* Внутренний отступ */
     margin-bottom: 70px; /* Внешний отступ */
+    position: relative;
+    min-height: 600px;
 }
 
 .lots__grid {
@@ -153,7 +155,7 @@ body {
     transition: transform 0.3s;
 }
 
-.lot:hover {
+.lot: hover {
     transform: translateY(-5px);
 }
 
@@ -165,12 +167,17 @@ body {
 
 .lot__overlay {
     position: absolute;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     padding: 20px;
     color: white;
+    z-index: 1;
 }
 
 .lot__title {
