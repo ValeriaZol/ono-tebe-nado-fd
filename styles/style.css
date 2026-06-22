@@ -27,7 +27,17 @@ body {
 .header__nav {
     grid-column: 1;
 }
+.nav__list {
+    display: flex;
+    list-style: circle; /* маркеры в виде кругов */
+    gap: 25px; /* расстояние между пунктами меню */
+    margin: 0;
+    padding: 0;
+}
 
+.nav__item {
+    list-style: none; /* убираем стандартные маркеры у li */
+}
 .nav__link {
     text-decoration: none;
     color: #333;
