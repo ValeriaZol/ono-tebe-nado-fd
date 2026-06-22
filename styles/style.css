@@ -347,8 +347,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(250px, 300px) 1fr minmax(150px, 200px);
     gap: 40px;
+    align-items: start;
 }
 
 .footer__address {
@@ -358,6 +359,8 @@ body {
 .contact__item {
     color: #bdc3c7;
     text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
 }
 
 .contact__text {
@@ -366,24 +369,40 @@ body {
 }
 
 .footer__nav {
+    list-style: none;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
-.footer__link {
+.nav__item {
+    text-align: center;
+}
+
+.nav__link {
     color: #bdc3c7;
     text-decoration: none;
 }
 
 .footer__social {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social__item {
+    display: inline-block;
 }
 
 .social__link {
-    color: #bdc3c7;
     text-decoration: none;
+}
+
+.social__icon {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
 }
