@@ -238,7 +238,8 @@ body {
 
 .lot__title {
     margin-top: 0;
-    font-size: 1.3em;
+    font-size: 0.9em;
+    margin-bottom: 10px;
 }
 
 .lot__description {
