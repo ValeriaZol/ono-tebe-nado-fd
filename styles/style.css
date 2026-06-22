@@ -61,16 +61,25 @@ body {
 .header__address {
     grid-column: 3;
     font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    justify-self: end;
+    align-items: flex-start;
 }
 
 .address__item {
     color: #666;
     text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
 }
 
 .address__text {
     margin-top: 5px;
     color: #666;
+    color: #666;
+    font-size: 0.9em;
 }
 
 
