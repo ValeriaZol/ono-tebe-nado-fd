@@ -21,6 +21,7 @@ body {
     padding: 20px 50px;
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
 }
 
 .header__nav {
@@ -64,7 +65,8 @@ body {
     background-attachment: fixed;
     color: white;
     text-align: center;
-    padding: 150px 20px 100px;
+    padding: 120px 20px 80px; /* Внутренний отступ */
+    margin-bottom: 60px; /* Внешний отступ между секциями */
 }
 
 .cover__title {
@@ -76,10 +78,10 @@ body {
 .description {
     max-width: 600px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 40px 30px; /* Внутренний отступ */
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
-}
+    }
 
 .description__text {
     font-size: 1.2em;
@@ -95,7 +97,10 @@ body {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
 }
+
 
 .description__button:hover {
     background-color: #e55a2c;
@@ -103,14 +108,16 @@ body {
 
 /* Lots */
 .lots {
-    padding: 80px 20px;
+    background-color: #f9f9f9;
+    padding: 60px 20px; /* Внутренний отступ */
+    margin-bottom: 70px; /* Внешний отступ */
 }
 
 .lots__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .lot {
@@ -171,14 +178,11 @@ body {
 }
 
 /* About */
-.about {
-    padding: 80px 20px;
-}
 
-.about__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+.about {
+    padding: 70px 20px; /* Внутренний отступ */
+    background-color: white;
+    margin-bottom: 60px; /* Внешний отступ */
 }
 
 .logo-column {
