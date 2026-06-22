@@ -97,8 +97,62 @@ body {
 .cover__title {
     font-size: 3.5em;
     margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
 }
+.title-word {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.title-word--first {
+    position: absolute;
+    width: 286px;
+    height: 115px;
+    top: 165px;
+    left: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1.15;
+    letter-spacing: 30%;
+    color: #FFFFFF;
+}
+
+.title-word--second {
+    position: absolute;
+    width: 339px;
+    height: 115px;
+    top: 300px;
+    left: 380.5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1.15;
+    letter-spacing: 30%;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.title-word--third {
+    position: absolute;
+    width: 387px;
+    height: 115px;
+    top: 435px;
+    left: 663px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1.15;
+    letter-spacing: 30%;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
 
 .description {
     max-width: 600px;
