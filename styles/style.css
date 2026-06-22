@@ -1,1 +1,84 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header__nav {
+  grid-column: 1;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #333;
+  margin-right: 25px;
+  font-weight: 500;
+}
+
+.header__logo {
+  grid-column: 2;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.header__address {
+  grid-column: 3;
+  font-size: 0.9em;
+}
+
+.address__item {
+  color: #666;
+  text-decoration: none;
+}
+
+.address__text {
+  margin-top: 5px;
+  color: #666;
+}
+.cover {
+  background-image: url (шапочку);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  padding: 150px 20px 100px;
+}
+
+.cover__title {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+.description__text {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.description__button {
+  padding: 12px 30px;
+  font-size: 1em;
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.description__button:hover {
+  background-color: #e55a2c;
+}
